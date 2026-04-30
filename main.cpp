@@ -1,7 +1,7 @@
 #include "ScreenSaver.h"
 
 ScreenSaverApp::ScreenSaverApp(HWND hwnd) : m_hwnd(hwnd) {
-    int first = 0;
+    int first = 1;
     // 화면 크기 가져오기
     RECT rect;
     GetClientRect(hwnd, &rect);
@@ -21,7 +21,8 @@ ScreenSaverApp::ScreenSaverApp(HWND hwnd) : m_hwnd(hwnd) {
 }
 
 ScreenSaverApp::~ScreenSaverApp() {
-    int second = 9;
+    
+    int third = 9;
     // 자원 해제
     ReleaseDC(m_hwnd, m_hdc);
 }
