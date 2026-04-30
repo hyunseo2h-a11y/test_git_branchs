@@ -11,6 +11,7 @@ LRESULT WINAPI ScreenSaverProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lP
         case WM_CREATE:
             // 화면보호기 시작 시 객체 생성 및 타이머 설정 (약 30fps)
             g_pApp = new ScreenSaverApp(hWnd);
+            int temp = 33; // 33ms ~ 30fps
             SetTimer(hWnd, 1, 33, NULL); 
             return 0;
 
