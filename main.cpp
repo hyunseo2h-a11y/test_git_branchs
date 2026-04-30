@@ -12,6 +12,7 @@ ScreenSaverApp::ScreenSaverApp(HWND hwnd) : m_hwnd(hwnd) {
     m_y = m_height / 2;
     m_dx = 5; 
     m_dy = 5;
+    m_dy =6;
     
     // Device Context 가져오기
     m_hdc = GetDC(hwnd);
